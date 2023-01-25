@@ -1,0 +1,204 @@
+
+
+<!DOCTYPE html> --> indica que es un documento de HTML y utiliza la ultima 
+version. se coloca siemore y al principio
+
+<html></html> dentro de esta etiqueta va a estar toda la pagina,
+encierra el codigo
+
+Body -> seria el cuerpo, todo lo que se visualiza de la pagina web
+<body></body>  
+
+
+<header></header> -> encabezado
+
+<nav></nav>
+El elemento HTML <nav> representa una sección de una página cuyo 
+propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices.
+
+solo existe del h1 al H6 
+
+titulo
+<h1> va una sola vez
+
+subtitulo
+<h2> <h3> pueden ir un par de veces pero no muchas
+
+
+<h4> <h5> <h6> pueden ir ilimitadas veces
+
+<p><p/> Paragraph Text
+
+Element		Meaning	  		Purpose
+<b>	 	 	Bold  	     			Highlight important information
+<strong>		Strong	      			Similarly to bold, to highlight key text
+<i>			Italic	            		To denote text
+<em>			Emphasised Text		Usually used as image captions
+<mark>			Marked Text	      		Highlight the background of the text
+<small>		Small Text			To shrink the text
+<strike>		Striked Out Text		To place a horizontal line across the text
+<u>			Underlined Text		Used for links or text highlights
+<ins>			Inserted Text		Displayed with an underline to show an inserted text
+<sub>			Subscript Text		Typographical stylistic choice
+<sup>			Superscript Text		Another typographical presentation style
+
+<a><a/> anchors,If the a element has an href attribute, then it represents a hyperlink 
+(a hypertext anchor) labeled by its contents.
+<a atributo="">texto que va a tener el atributo</a>
+<a href=""> attribute
+Specifies the linked document, resource, or location.
+code example -> <a href="https://html.com">Click here!</a> <!--https:// is for links aout of your files-->
+code example -> <a href="carpeta nueva/pagina2.html">Click here!</a> <!--the / it means that is inside that folder-->
+ ***
+Fully Qualified (include a protocol)
+https://html.com
+https://html.com
+URL with a relative (unspecified) protocol
+//html.com
+Browser-specific protocol
+chrome://settings/
+Relative to the current page
+next
+Relative to the current domain
+/
+/wp-content/uploads/flamingo.jpg
+
+Specifies where to display the linked URL. It is a name of, or keyword for, a browsing context: a tab, window, or <iframe>. The following keywords have special meanings:
+
+_self: Load the URL into the same browsing context as the current one. This is the default behavior.
+_blank: Load the URL into a new browsing context. This is usually a tab, but users can configure browsers to use new windows instead.
+_parent: Load the URL into the parent browsing context of the current one. If there is no parent, this behaves the same way as _self.
+_top: Load the URL into the top-level browsing context (that is, the "highest" browsing context that is an ancestor of the current one, and has no parent). If there is no parent, this behaves the same way as _self.
+Note: When using target, consider adding rel="noreferrer" to avoid exploitation of the window.opener API.
+
+Note: Linking to another page using target="_blank" will run the new page on the same process as your page. If the new page is executing expensive JS, your page's performance may suffer. To avoid this use rel="noopener".
+
+
+Read more: https://html.com/attributes/a-href/#ixzz7YsZ8XkUl
+<a hreflang=""> Attribute
+Specifies the language of the linked resource.
+code example -> <a href="https://es.wikipedia.org/wiki/Flamenco" hreflang="es">Flamenco</a>
+Use hreflang to specify the language using the relevant two-letter language code (ISO 639-1). 
+You may also identify the country code, but this must come after the language code, and cannot be used by itself.
+
+<ul></ul> ul de "unordered list" -lista no ordenada . crea una lista no ordenada.
+Sus etiquetas son: <ul> y </ul> (ambas obligatorias).
+<ol></ol>El elemento ol permite definir listas o viñetas ordenadas (“Ordered List”), bien con numeración o alfabéticamente.
+Sus etiquetas son: <ol> y </ol> (ambas obligatorias).
+<il></il>El elemento lidel ingles item list o elemento de lista declara cada uno de los elementos de una lista.
+
+<img> this element is the most straight-forward way of displaying a static image on a page.
+<img src=""> <!--All <img> tags must have a defined src attribute. This defines the image to be displayed.-->
+example code -> <img src="sc/scooby doo.jpg"> <!--the image came from your computer-->
+example code -> <img src="https://st3.depositphotos.com/1097589/18747/v/950/depositphotos_187479746-stock-illustration-cartoon-vector-illustration-of-a.jpg"> <!--the image is online
+that it means if the owner of the page errase the image it wouldnt be more avble in our web side too/the hppts, the s means that the page where came from is save-->
+attribute 
+example code -> <img width="50px" height="80px"> <!--it doesnt recomend use this attribute cause then when you use css is the dimens are given u can not change them later-->
+
+<video src="" controls><video/>
+controls
+Si está presente este atributo, Gecko ofrecerá controles para permitir que el usuario controle la reproducción de video, incluyendo volumen, búsqueda y pausar/reanudar reproducción.
+
+height
+La altura del área de visualización del vídeo en píxeles CSS.
+
+loop
+Un atributo booleano; si se especifica, al alcanzar el final del video, buscaremos automáticamente hasta el principio.
+
+poster
+Una URL que indica un marco de póster para mostrar el resultado hasta que el usuario reproduzca o busque. Si este atributo no se especifica, no se muestra nada hasta que el primer cuadro está disponible, entonces se muestra el primer marco como el marco de póster.
+
+src
+La URL del vídeo que se va a insertar. Es opcional; podrá optar, en su lugar, por el elemento <source>dentro del bloque de vídeo para especificar el vídeo que se va a incrustar.
+
+width
+La anchura del área de visualización del vídeo en píxeles CSS.
+
+<audio src="" controls><audio/> <!--u can use the audio of a video too-->
+
+<div></div> div de "división" - división . Sirve para crear secciones o agrupar contenidos. 
+es como una caja donde meto cosas, agrupa.sepa el contenido de la estructura general
+y la agrupa entre si.Sus etiquetas son : <div>y </div>(ambas obligatorias).
+
+<form></form> 
+<input type="" required value="">  
+
+type
+El tipo de control a mostrar. Su valor predeterminado es text, si no se especifica este atributo. 
+Los posibles valores de type son:
+
+button: Botón sin un comportamiento específico.
+checkbox: Casilla de selección. Se debe usar el atributo value para definir el valor que se enviará por este elemento. Se usa el atributo checked para indicar si el elemento está seleccionado. También se puede usar el atributo indeterminate (el cual solo se puede establecer programaticamente) para indicar que la casilla está en un estado indeterminado (en la mayoría de las plataformas, se dibuja una línea horizontal a través de la casilla).
+color: Control para espicificar un color. Una interfaz de selección de color no requiere más funcionalidad que la de aceptar colores simples como texto (más información).
+date: Control para introducir una fecha (año, mes y día, sin tiempo).
+datetime: Deprecated Control para introducir una fecha y hora (horas, minutos, segundos y fracción de segundo), basado en la zona horaria UTC. Esta característica ha sido removida de WHATWG HTML.
+datetime-local: Control para introducir fecha y hora, sin zona horaria específica.
+email: Campo para introducir una dirección de correo electrónico. El valor introducido se valida para que contenga una cadena vacía o una dirección de correo válida antes de enviarse. Las pseudo-clases :valid y :invalid son aplicadas segun corresponda.
+file: Control que permite al usuario seleccionar un archivo. Se puede usar el atributo accept para definir los tipos de archivo que el control podrá seleccionar.
+hidden: Control que no es mostrado en pantalla, pero cuyo valor es enviado al servidor.
+image: Botón de envío de formulario con gráfico. Se debe usar el atributo src para definir el origen de la imagen y el atributo alt para definir un texto alternativo. Se puede usar los atributos height y width para definir el tamaño de la imagen en píxeles.
+month: Control para introducir un mes y año, sin zona horaria específica.
+number: Control para introducir un número de punto flotante.
+password: Control de línea simple cuyo valor permanece oculto. Se puede usar el atributo maxlength para especificar la longitud máxima del valor que se puede introducir.
+radio: Botón radio. Se debe usar el atributo value para definir el valor que se enviará por este elemento. Se usa el atributo checked para indicar si el elemento está seleccionado de forma predeterminada. Los botones radio que tengan el mismo valor para su atributo name están dentro del mismo "grupo de botones radio". Solo un botón radio dentro de un grupo puede ser seleccionado a la vez.
+range: Control para introducir un número cuyo valor exacto no es importante. Este control usa los siguientes valores predeterminados si no se especifica cada atributo:
+min: 0
+max: 100
+value: min + (max - min) / 2, o min si max es menor que min
+step: 1
+reset: Botón que restaura los contenidos de un formulario a sus valores predeterminados.
+search: Cuadro de texto de línea simple para introducir textos de búsqueda. Los saltos de línea son eliminados automáticamente del valor introducido.
+submit: Botón que envía el formulario.
+tel: Control para introducir un número telefónico. Los saltos de línea son eliminados automáticamente del valor introducido, pero no hay otra sintaxis forzada. Se pueden usar atributos como pattern y maxlength para restringir los valores introducidos en este control. Las pseudo-clases CSS :valid y :invalid son aplicadas segun corresponda.
+text: Campo de texto de línea simple. Los saltos de línea son eliminados automáticamente del valor introducido.
+time: Control para introducir un valor de tiempo sin zona horaria específica.
+url: Campo para editar una URL. El valor introducido se valida para que contenga una cadena vacía o una ruta URL absoluta antes de enviarse. Los saltos de línea y espacios en blanco al principio o al final del valor son eliminados automáticamente. Se pueden usar atributos como pattern y maxlength para restringir los valores introducidos en el control. Las pseudo-clases :valid y :invalid son aplicadas segun corresponda.
+week: Control para introducir una fecha que consiste en número de semana del año y número de semana sin zona horaria específica.
+
+
+id=""
+El atributo global id define un identificador único (ID) el cual no debe repetirse en todo el documento. Su propósito es identificar el elemento al vincularlo (usando un identificador de fragmento), en scripts u hojas de estilo (con CSS).
+
+El valor de este atributo es una cadena de caracteres opaca: es decir, el autor del sitio no debe usarlo para proporcionar información. De forma particular, en sentido semántico por ejemplo, no debe ser derivado de la misma cadena.
+
+El valor de este atributo no debe contener espacios en blanco. Los navegadores tratan los IDs que contienen espacios en blanco como si los espacios fueran parte del ID. En contraste con el atributo class, el cual permite valores separados por espacios, los elementos pueden tener sólo un ID definido mediante el atributo ID. Tenga en cuenta que un elemento puede tener muchos ID, pero los demás deben ser definidos de otra forma,
+ como por medio de un script interactuando con el DOM.
+
+Head-> la cabeza, los pensamientos, lo que no se visualiza en la 
+pagina web
+<head></head>
+
+<tittle></tittle> -> Titulo de un navegar, lo que se ve en la ventanita
+
+<meta> ->meta de "metainformation" - metainformación. Sirve para aportar información sobre el documento..
+Sus etiquetas son: <meta> (solo tiene una).
+
+Está definido como: Elemento de cabecera.
+
+Crea una caja: No.
+
+Puede contener: Nada.
+
+<meta charset="utf-8">
+<meta name="keywords" content="verano, fiesta, diversion"> <!-- palabras claves para que cuando
+las utilicen en el buscador aparezca nuestra pagina-->
+<meta name="description" content="describe la pagina web, lo mas conveniente es de 70 a 140 caracteres">
+<meta name="author" content="Malena"> <!-- nombre del dueño de la pagina-->
+<meta name="copyright" content="facebook Inc.">
+<meta name="robots" content="noindex"> <!-- si la pagina va a ser o no visible en el buscador-->
+
+Puede ser contenido por: Elementos head
+<boton color="rojo" tamaño="grande">objeto que va a tener todos esos atributos<boton/>
+
+hay etiquetes que completan la linea y otras que se adaptan a la caja que la contiene (esto se especifica mejor con una paguina web y sus propiedades)
+
+
+
+
+
+
+
+
+
+
+

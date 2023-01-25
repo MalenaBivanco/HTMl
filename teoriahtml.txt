@@ -1,0 +1,108 @@
+tag -> etiqueta -> de que estoy hablando//hay etiquetas que completan
+la linea de la caja que las contiene (si la caja tiene un ancho de
+100px la linea tambien) y otras que se amoldan al tamaño del contenido
+Attributes -> atributos -> adjetivos, me indica a que caracteristica me refiero (tamaño, color, etc.)
+value -> valor -> indica si mide 3cm, si es blanco, negro, etc. 
+<etiqueta atributo="valor"></etiqueta>
+
+<!DOCTYPE html> --> indica que es un documento de HTML y utiliza la ultima 
+version. se coloca siemore y al principio
+
+<html></html> dentro de esta etiqueta va a estar toda la pagina,
+encierra el codigo
+
+Body -> seria el cuerpo, todo lo que se visualiza de la pagina web
+<body></body>  
+
+solo existe del h1 al H6 
+titulo
+<h1> va una sola vez
+
+subtitulo
+<h2> <h3> pueden ir un par de veces pero no muchas
+
+
+<h4> <h5> <h6> pueden ir ilimitadas veces
+
+<p><p/> Paragraph Text
+
+Element		Meaning	  		Purpose
+<b>	 	 	Bold  	     			Highlight important information
+<strong>		Strong	      			Similarly to bold, to highlight key text
+<i>			Italic	            		To denote text
+<em>			Emphasised Text		Usually used as image captions
+<mark>			Marked Text	      		Highlight the background of the text
+<small>		Small Text			To shrink the text
+<strike>		Striked Out Text		To place a horizontal line across the text
+<u>			Underlined Text		Used for links or text highlights
+<ins>			Inserted Text		Displayed with an underline to show an inserted text
+<sub>			Subscript Text		Typographical stylistic choice
+<sup>			Superscript Text		Another typographical presentation style
+
+<a><a/> anchors,If the a element has an href attribute, then it represents a hyperlink 
+(a hypertext anchor) labeled by its contents.
+<a atributo="">texto que va a tener el atributo</a>
+<a href=""> attribute
+Specifies the linked document, resource, or location.
+code example -> <a href="https://html.com">Click here!</a> <!--https:// is for links aout of your files-->
+code example -> <a href="carpeta nueva/pagina2.html">Click here!</a> <!--the / it means that is inside that folder-->
+Fully Qualified (include a protocol)
+https://html.com
+https://html.com
+URL with a relative (unspecified) protocol
+//html.com
+Browser-specific protocol
+chrome://settings/
+Relative to the current page
+next
+Relative to the current domain
+/
+/wp-content/uploads/flamingo.jpg
+
+Specifies where to display the linked URL. It is a name of, or keyword for, a browsing context: a tab, window, or <iframe>. The following keywords have special meanings:
+
+_self: Load the URL into the same browsing context as the current one. This is the default behavior.
+_blank: Load the URL into a new browsing context. This is usually a tab, but users can configure browsers to use new windows instead.
+_parent: Load the URL into the parent browsing context of the current one. If there is no parent, this behaves the same way as _self.
+_top: Load the URL into the top-level browsing context (that is, the "highest" browsing context that is an ancestor of the current one, and has no parent). If there is no parent, this behaves the same way as _self.
+Note: When using target, consider adding rel="noreferrer" to avoid exploitation of the window.opener API.
+
+Note: Linking to another page using target="_blank" will run the new page on the same process as your page. If the new page is executing expensive JS, your page's performance may suffer. To avoid this use rel="noopener".
+
+
+Read more: https://html.com/attributes/a-href/#ixzz7YsZ8XkUl
+<a hreflang=""> Attribute
+Specifies the language of the linked resource.
+code example -> <a href="https://es.wikipedia.org/wiki/Flamenco" hreflang="es">Flamenco</a>
+Use hreflang to specify the language using the relevant two-letter language code (ISO 639-1). 
+You may also identify the country code, but this must come after the language code, and cannot be used by itself.
+Head-> la cabeza, los pensamientos, lo que no se visualiza en la 
+pagina web
+<head></head>
+
+<tittle></tittle> -> Titulo de un navegar, lo que se ve en la ventanita
+
+<boton color="rojo" tamaño="grande">objeto que va a tener todos esos atributos<boton/>
+
+hay etiquetes que completan la linea y otras que se adaptan a la caja que la contiene (esto se especifica mejor con una paguina web y sus propiedades)
+
+
+
+
+
+
+
+
+
+
+<img> this element is the most straight-forward way of displaying a static image on a page.
+<img src=""> <!--All <img> tags must have a defined src attribute. This defines the image to be displayed.-->
+example code -> <img src="sc/scooby doo.jpg"> <!--the image came from your computer-->
+example code -> <img src="https://st3.depositphotos.com/1097589/18747/v/950/depositphotos_187479746-stock-illustration-cartoon-vector-illustration-of-a.jpg"> <!--the image is online
+that it means if the owner of the page errase the image it wouldnt be more avble in our web side too/the hppts, the s means that the page where came from is save-->
+attribute 
+example code -> <img width="50px" height="80px"> <!--it doesnt recomend use this attribute cause then when you use css is the dimens are given u can not change them later-->
+
+<video src="" controls><video/>
+<audio src="" controls><audio/> <!--u can use the audio of a video too-->
+
